@@ -1,0 +1,33 @@
+.perfil {
+  padding: 2em 1em;
+  display: flex;
+}
+
+.imagem__perfil {
+  width: 57px;
+  height: 57px;
+  border-radius: 50px;
+}
+
+.perfil__descricao {
+  margin-left: 1em;
+}
+
+.perfil__titulo {
+  font-weight: 700;
+  size: 22px;
+  color: #464646;
+  margin-bottom: 6px;
+}
+
+.perfil__texto {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+@media screen and (min-width: 1440px) {
+  .perfil {
+    padding: 2em 8em;
+  }
+}

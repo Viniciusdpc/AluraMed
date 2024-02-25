@@ -1,0 +1,161 @@
+.consultas__data {
+  color: #464646;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 1em;
+}
+
+.consultas ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consulta__card {
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 328px;
+  height: 160px;
+  padding: 16px 16px 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.consulta__card-titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consulta__card-paciente {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.consulta__card-paciente > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.consulta__card-paciente > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.consulta__card-titulo .consulta__card-chat {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+}
+
+.consulta__card-paciente strong {
+  font-size: 14px;
+  color: #464646;
+}
+
+.consulta__card-paciente span {
+  font-size: 12px;
+  color: #a3a3a3;
+  display: flex;
+  align-items: center;
+}
+
+.consulta__card-texto {
+  margin-left: 5px;
+}
+
+.consulta__card-hora {
+  color: #464646;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.consulta__card-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 82px;
+}
+
+.consulta__card-conteudo p {
+  font-size: 12px;
+  margin: 8px 0;
+  color: #464646;
+}
+
+.consulta__card-botão {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.consulta__card-botão button {
+  min-width: 140px;
+  width: 100%;
+  height: 48px;
+
+  border-radius: 8px;
+
+  padding: 13px 16px;
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.consulta__card-acoes button:only-of-type {
+  margin: 0;
+}
+
+.botão__video {
+  background-color: #ffb050;
+  color: white;
+}
+
+.botão__audio {
+  background-color: #ececec;
+}
+
+.botão__endereço {
+  background-color: #4894ff;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .consultas ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .consultas ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    margin-bottom: 5em;
+  }
+
+  .consultas {
+    margin: 0 5em;
+    justify-content: space-between;
+    padding-left: 4em;
+  }
+
+  .consulta__card {
+    width: 450px;
+    height: 180px;
+    padding: 20px 20px 0;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+}
